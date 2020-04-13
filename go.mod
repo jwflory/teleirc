@@ -13,6 +13,7 @@ require (
 	github.com/kyokomi/emoji v2.1.0+incompatible
 	github.com/leodido/go-urn v1.1.0 // indirect
 	github.com/lrstanley/girc v0.0.0-20190801035559-4fc93959e1a7
+	github.com/rtfd/godocjson v0.0.0-20190930142607-9bacaf9b948b // indirect
 	github.com/stretchr/testify v1.3.0
 	github.com/technoweenie/multipartstreamer v1.0.1 // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect

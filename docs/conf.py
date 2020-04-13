@@ -34,11 +34,13 @@ import sphinx_rtd_theme
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'autoapi.extension',
     'recommonmark',
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'sphinx.ext.imgmath',
     'sphinx.ext.viewcode',
+    'sphinxcontrib_golangdomain',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -214,3 +216,13 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
+
+# -- Options for autoapi configuration ------------------------------------
+
+# autoapi_type tells AutoAPI what type of language we are documenting.
+autoapi_type = 'go'
+
+# autoapi_dirs tells AutoAPI which directories contain the source code to
+# document. These can either be absolute, or relative to Sphinx’s conf.py file.
+autoapi_dirs = ['../cmd', '../internal']

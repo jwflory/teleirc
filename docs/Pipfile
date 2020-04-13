@@ -4,11 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-Sphinx = "*"
+Sphinx = "~=3.0.1"
+sphinx-autoapi = {extras = ["go"],version = "*"}
 sphinx_rtd_theme = "*"
+sphinxcontrib-golangdomain = "*"
 recommonmark = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
